@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Form</title>
+    <script>
+    
+    let d;
+    let f;
+    
+    let dg;
+    let fg;
+    
+    let dm;
+    let fm;
+    
+    let dr;
+    let fr;
+    
+        function calculateResults() {
+            let ip1 = parseInt(document.getElementById("ip1").value);
+            let ip2 = parseInt(document.getElementById("ip2").value);
+            let ip3 = parseInt(document.getElementById("ip3").value);
+            let ip4 = parseInt(document.getElementById("ip4").value);
+            let ip5 = parseInt(document.getElementById("ip5").value);
+
+            // Ensure the values are within the specified range
+           
+if (ip1 < 10 || ip1 > 40 || ip2 < 0 || ip2 > 10 || ip3 < 0 || ip3 > 10 || ip4 < 0 || ip4 > 10 || ip5 < 0 || ip5 > 10) 
+{
+                alert("Please enter values within the specified range.");
+                return;
+            }
+
+            let c = Math.abs(ip4 - ip5);
+            let e = 40 - ip2;
+            let a = ip1 - ip3;
+
+            let b;
+            if (ip4 > ip5) {
+                b = a + c;
+            } else {
+                b = a - c;
+            }
+
+            d = (b * 100) / e;
+            f = ip1 * 2.5;
+
+            document.getElementById("resultEarlier").innerText = "Your number earlier: " + f;
+            document.getElementById("resultNow").innerText = "Your number now: " + d.toFixed(2);
+        }
+        
+        
+       function calculateResults2() {
+            let ip1g = parseInt(document.getElementById("ip1g").value);
+            let ip2g = parseInt(document.getElementById("ip2g").value);
+            let ip3g = parseInt(document.getElementById("ip3g").value);
+            let ip4g = parseInt(document.getElementById("ip4g").value);
+            let ip5g = parseInt(document.getElementById("ip5g").value);
+
+            // Ensure the values are within the specified range
+            if (ip1g < 10 || ip1g > 40 || ip2g < 0 || ip2g > 10 || ip3g < 0 || ip3g > 10 || ip4g < 0 || ip4g > 10 || ip5g < 0 || ip5g > 10) 
+
+{
+                alert("Please enter values within the specified range.");
+                return;
+            }
+
+            let cg = Math.abs(ip4g - ip5g);
+            let eg = 40 - ip2g;
+            let ag = ip1g - ip3g;
+
+            let bg;
+            if (ip4g > ip5g) {
+                bg = ag + cg;
+            } else {
+                bg = ag - cg;
+            }
+
+            let dg = (bg * 100) / eg;
+            let fg = ip1g * 2.5;
+
+            document.getElementById("resultEarlierg").innerText = "Your number earlier: " + fg;
+            document.getElementById("resultNowg").innerText = "Your number now: " + dg.toFixed(2);
+        }
+        
+        function calculateResults3() {
+            let ip1m = parseInt(document.getElementById("ip1m").value);
+            let ip2m = parseInt(document.getElementById("ip2m").value);
+            let ip3m = parseInt(document.getElementById("ip3m").value);
+            let ip4m = parseInt(document.getElementById("ip4m").value);
+            let ip5m = parseInt(document.getElementById("ip5m").value);
+
+            // Ensure the values are within the specified range
+            if (ip1m < 10 || ip1m > 40 || ip2m < 0 || ip2m > 10 || ip3m < 0 || ip3m > 10 || ip4m < 0 || ip4m > 10 || ip5m < 0 || ip5m > 10)  {
+                alert("Please enter values within the specified range.");
+                return;
+            }
+
+            let cm = Math.abs(ip4m - ip5m);
+            let em = 40 - ip2m;
+            let am = ip1m - ip3m;
+
+            let bm;
+            if (ip4m > ip5m) {
+                bm = am + cm;
+            } else {
+                bm = am - cm;
+            }
+
+            let dm = (bm * 100) / em;
+            let fm = ip1m * 2.5;
+
+            document.getElementById("resultEarlierm").innerText = "Your number earlier: " + fm;
+
+document.getElementById("resultNowm").innerText = "Your number now: " + dm.toFixed(2);
+        }
+        
+        
+    function calculateResults4() {
+            let ip1r = parseInt(document.getElementById("ip1r").value);
+            let ip2r = parseInt(document.getElementById("ip2r").value);
+            let ip3r = parseInt(document.getElementById("ip3r").value);
+            let ip4r = parseInt(document.getElementById("ip4r").value);
+            let ip5r = parseInt(document.getElementById("ip5r").value);
+
+            // Ensure the values are within the specified range
+           
+if (ip1r < 10 || ip1r > 40 || ip2r < 0 || ip2r > 10 || ip3r < 0 || ip3r > 10 || ip4r < 0 || ip4r > 10 || ip5r < 0 || ip5r > 10) 
+{
+                alert("Please enter values within the specified range.");
+                return;
+            }
+
+            let cr = Math.abs(ip4r - ip5r);
+            let er = 40 - ip2r;
+            let ar = ip1r - ip3r;
+
+            let br;
+            if (ip4r > ip5r) {
+                br = ar + cr;
+            } else {
+                br = ar - cr;
+            }
+
+            let dr = (br * 100) / er;
+            let fr = ip1r * 2.5;
+
+            document.getElementById("resultEarlierr").innerText = "Your number earlier: " + fr;
+            document.getElementById("resultNowr").innerText = "Your number now: " + dr.toFixed(2);
+        }
+
+
+ function showdfinal() {
+   let go = f+fm+fg+fr;
+   let go2 = d+dm+dg+dr;
+   document.getElementById("resultEarlierf").innerText = "Your number earlier: " + go;
+            document.getElementById("resultNowf").innerText = "Your number now: " + go2.toFixed(2);
+   
+ }
+        
+    </script>
+    
+    <style>
+        .red-word {
+            font-weight: bold;
+            color: orange;
+            font-size:20px;
+        }
+        
+        .fancy-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px; /* Slightly rounded corners */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .fancy-button:hover {
+            background-color: darkgreen;
+            transform: scale(1.05); /* Slightly enlarge the button on hover */
+        }
+        
+        .blue-line {
+            border: 0;
+            height: 2px; /* Height of the line */
+            background-color: blue;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <hr class="blue-line">
+    <h1>Hindi</h1>
+    <hr class="blue-line">
+   
+    
+    <label for="ip1">  Correct Q Before Final Answer key (10 to 40):</label>
+    <input type="number" id="ip1" name="ip1" min="10" max="40"><br><br>
+
+    <label for="ip2">Number of questions canceled in this section (0 to 10):</label>
+    <input type="number" id="ip2" name="ip2" min="0" max="10"><br><br>
+
+    <label for="ip3">Number of questions that were canceled and was correct earlier (0 to 10):</label>
+    <input type="number" id="ip3" name="ip3" min="0" max="10"><br><br>
+
+    <label for="ip4">Number of questions that you gain in option change (0 to 10):</label>
+    <input type="number" id="ip4" name="ip4" min="0" max="10"><br><br>
+
+    <label for="ip5">Number of questions that you lose in option change (0 to 10):</label>
+    <input type="number" id="ip5" name="ip5" min="0" max="10"><br><br>
+
+    <button class="fancy-button" onclick="calculateResults()">Check</button>
+
+   
+    <p id="resultEarlier">Your number earlier:</p>
+    <p id="resultNow">Your number now:</p>
+    
+<hr class="blue-line">
+    <h1>GS/SCIENCE</h1>
+<hr class="blue-line">
+    
+    <label for="ip1g">Correct Q Before Final Answer key (10 to 40):</label>
+    <input type="number" id="ip1g" name="ip1g" min="10" max="40"><br><br>
+
+    <label for="ip2g">Number of questions canceled in this section (0 to 10):</label>
+    <input type="number" id="ip2g" name="ip2g" min="0" max="10"><br><br>
+
+    <label for="ip3g">Number of questions that were canceled and was correct earlier (0 to 10):</label>
+    <input type="number" id="ip3g" name="ip3g" min="0" max="10"><br><br>
+
+    <label for="ip4g">Number of questions that you gain in option change (0 to 10):</label>
+    <input type="number" id="ip4g" name="ip4g" min="0" max="10"><br><br>
+
+    <label for="ip5g">Number of questions that you lose in option change (0 to 10):</label>
+    <input type="number" id="ip5g" name="ip5g" min="0" max="10"><br><br>
+
+    <button class="fancy-button" onclick="calculateResults2()">Check</button>
+
+    
+    <p id="resultEarlierg">Your number earlier:</p>
+    <p id="resultNowg">Your number now:</p>
+    
+  <hr class="blue-line">
+    <h1>MATHS</h1>
+  <hr class="blue-line">
+    
+    <label for="ip1m">)Correct Q Before Final Answer key (10 to 40):</label>
+    <input type="number" id="ip1m" name="ip1m" min="10" max="40"><br><br>
+
+    <label for="ip2">Number of questions canceled in this section (0 to 10):</label>
+    <input type="number" id="ip2m" name="ip2m" min="0" max="10"><br><br>
+
+    <label for="ip3m">Number of questions that were canceled and was correct earlier (0 to 10):</label>
+    <input type="number" id="ip3m" name="ip3m" min="0" max="10"><br><br>
+<label for="ip4m">Number of questions that you gain in option change (0 to 10):</label>
+    <input type="number" id="ip4m" name="ip4m" min="0" max="10"><br><br>
+
+    <label for="ip5m">Number of questions that you lose in option change (0 to 10):</label>
+    <input type="number" id="ip5m" name="ip5m" min="0" max="10"><br><br>
+
+    <button class="fancy-button" onclick="calculateResults3()">Check</button>
+
+    
+    <p id="resultEarlierm">Your number earlier:</p>
+    <p id="resultNowm">Your number now:</p>
+    
+  <hr class="blue-line">
+    <h1>REASONING</h1>
+  <hr class="blue-line">
+    
+    <label for="ip1r"> Correct Q Before Final Answer key (10 to 40):</label>
+    <input type="number" id="ip1r" name="ip1r" min="10" max="40"><br><br>
+
+    <label for="ip2r">Number of questions canceled in this section (0 to 10):</label>
+    <input type="number" id="ip2r" name="ip2r" min="0" max="10"><br><br>
+
+    <label for="ip3r">Number of questions that were canceled and was correct earlier (0 to 10):</label>
+    <input type="number" id="ip3r" name="ip3r" min="0" max="10"><br><br>
+
+    <label for="ip4r">Number of questions that you gain in option change (0 to 10):</label>
+    <input type="number" id="ip4r" name="ip4r" min="0" max="10"><br><br>
+
+    <label for="ip5r">Number of questions that you lose in option change (0 to 10):</label>
+    <input type="number" id="ip5r" name="ip5r" min="0" max="10"><br><br>
+
+    <button class="fancy-button" onclick="calculateResults4()">Check</button>
+
+    
+    <p id="resultEarlierr">Your number earlier:</p>
+    <p id="resultNowr">Your number now:</p>
+    
+  <hr class="blue-line">
+    
+    <button class="fancy-button" onclick="showdfinal()">click here to check overall</button>
+
+    <h2>Over all result</h2>
+    <p id="resultEarlierf" class="red-word">Your number earlier:</p>
+    <p id="resultNowf" class="red-word">Your number now:</p>
+    
+    
+  
+  
+      <br>
+      
+        <hr class="blue-line">
+  <h3>For any query contact:Lavndasur in Telegram </h3>
+          <hr class="blue-line">
+      <h2>JOIN BTECH GROUP</h2>
+      <h3>Telegram group</h3>
+      
+      <a href="https://t.me/Upp_radio_operator_936" target="_blank">Head Operator B.tech Official(channel)</a>
+      <br>
+            <a href="https://t.me/head_operator936" target="_blank">Head Operator B.tech Official(group)</a>
+      
+      <h3>WhatsApp group</h3>
+      
+      <a href="https://chat.whatsapp.com/DEBkA3TcubiIPdK6hXxYyJ" target="_blank">UPO HO(unverified)</a></a>
+      <br>
+            
+      
+</body>
+</html>
